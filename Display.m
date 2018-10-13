@@ -1,5 +1,4 @@
-clear
-clc
+
 %%CHANGE VARIABLE VALUES
 load TicTacToe
 figure('WindowStyle', 'docked');
