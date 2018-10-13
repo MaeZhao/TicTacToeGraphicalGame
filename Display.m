@@ -3,7 +3,7 @@ clc
 %%CHANGE VARIABLE VALUES
 load TicTacToe
 figure('WindowStyle', 'docked');
-imshow([Board{1,:};Board{2,:};Board{3,:}]);
+imshow([DBoard{1,:};DBoard{2,:};DBoard{3,:}]);
 counter = false; %temp
 stop = false; %temp
 while (stop==false)
@@ -12,16 +12,16 @@ while (stop==false)
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
-        Board {row, col} = X;
+        DBoard {row, col} = X;
         counter = counter + 1;
     else
         [x,y] = ginput(1);
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
-        Board {row, col} = O;
+        DBoard {row, col} = O;
         counter = counter + 1;
     end
-    imshow([Board{1,:};Board{2,:};Board{3,:}]); %% MUST USE THIS TO UPDATE
+    imshow([DBoard{1,:};DBoard{2,:};DBoard{3,:}]); %% MUST USE THIS TO UPDATE
     CheckWin
 end
