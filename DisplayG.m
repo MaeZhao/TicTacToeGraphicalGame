@@ -2,7 +2,7 @@
 %%CHANGE VARIABLE VALUES
 load TicTacToe
 figure('WindowStyle', 'docked');
-imshow([Board{1,:};Board{2,:};Board{3,:}]);
+imshow([GBoard{1,:};GBoard{2,:};GBoard{3,:}]);
 counter = false; %temp
 stop = false; %temp
 while (stop==false)
@@ -11,16 +11,16 @@ while (stop==false)
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
-        Board {row, col} = X;
+        GBoard {row, col} = X;
         counter = counter + 1;
     else
         [x,y] = ginput(1);
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
-        Board {row, col} = O;
+        GBoard {row, col} = O;
         counter = counter + 1;
     end
-    imshow([Board{1,:};Board{2,:};Board{3,:}]); %% MUST USE THIS TO UPDATE
+    imshow([GBoard{1,:};GBoard{2,:};GBoard{3,:}]); %% MUST USE THIS TO UPDATE
     CheckWin
 end

@@ -1,13 +1,14 @@
 %CheckS
-if Boardm(row,col)==0
+if DBoard(row,col)==0
     available=true
     if counter==1 
-        Boardm(row,col)=88;
+        DBoard(row,col)=88;
     else
-        Boardm(row,col)=79;
+        DBoard(row,col)=79;
     end
     
-    else disp('pick again')
+else
+    disp('\npick again')
         counter=1
         end 
    
