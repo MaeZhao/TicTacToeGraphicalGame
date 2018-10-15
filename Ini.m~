@@ -1,7 +1,6 @@
 %% Checks whether characters have won, lost or at a tie
 clear
-clc
-load Variables 
+cl
 repeat = true;
 while(repeat == true)
     P1name = input("Player one input your name:\n", "s");
