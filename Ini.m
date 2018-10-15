@@ -7,7 +7,7 @@ if gameEnd == false;
         DisplayG
         Ini
     else 
-        quit;
+        error(ms);
     end
 end
 play = ""
@@ -16,6 +16,6 @@ if gameEnd == true
     if (play == "y")
         Ini
     else
-        exit;
+        error(ms);
     end
 end
