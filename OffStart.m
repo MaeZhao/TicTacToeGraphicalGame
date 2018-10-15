@@ -1,5 +1,5 @@
 clear
 clc
 load Variables 
-gameEnd = false
+gameEnd = false;
 Ini
