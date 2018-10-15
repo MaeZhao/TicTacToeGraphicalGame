@@ -3,7 +3,7 @@
 load TicTacToe
 figure('WindowStyle', 'docked');
 imshow([GBoard{1,:};GBoard{2,:};GBoard{3,:}]);
-counter = false; %temp
+counter = 0; %temp
 stop = false; %temp
 while (stop==false)
     if mod(counter, 2) == 0
@@ -11,15 +11,19 @@ while (stop==false)
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
-        GBoard {row, col} = X;
-        counter = counter + 1;
+        if available == true
+            GBoard {row, col} = X;
+            counter = counter + 1;
+        end
     else
         [x,y] = ginput(1);
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
-        GBoard {row, col} = O;
-        counter = counter + 1;
+          if available == true
+            GBoard {row, col} = O;
+            counter = counter + 1;
+          end
     end
     imshow([GBoard{1,:};GBoard{2,:};GBoard{3,:}]); %% MUST USE THIS TO UPDATE
     Checkwin_2
