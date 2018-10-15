@@ -10,7 +10,7 @@ if gameEnd == false;
         error(ms);
     end
 end
-play = ""
+play = "";
 if gameEnd == true
     play = input("Want to play another game?(y for yes, any other key for no)\n", 's');
     if (play == "y")
