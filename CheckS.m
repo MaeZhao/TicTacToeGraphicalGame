@@ -12,7 +12,7 @@ if DBoard(row,col)==0
     
 else
     available = false;
-    disp('\npick again')
+    disp('pick again')
         counter=1
         end 
    

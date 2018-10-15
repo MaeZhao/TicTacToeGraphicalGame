@@ -10,7 +10,7 @@ for i = 1:3
 
 % Check columns for P1 win
 
-    if sum(DBoard(:,1)==P1const*ones (1,3))== 3
+    if sum(DBoard(:,i)==P1const*ones (1,3))== 3
        
         P1win = 1;
        fprintf ('%s wins', P1name)
@@ -30,7 +30,7 @@ for i = 1:3
 
 % Check columns for P2 win
 
-    if sum(DBoard(:,1)==P2const*ones (1,3))== 3
+    if sum(DBoard(:,i)==P2const*ones (1,3))== 3
        
         P2win = 1;
         fprintf ('%s wins',P2name)
