@@ -7,7 +7,7 @@ counter = 0; %temp
 stop = false; %temp
 while (stop==false)
     if mod(counter, 2) == 0
-        [x,y] = Ginput(1);
+        [x,y] = ginput(1);
         row = floor(y/123)+1;
         col = floor(x/138)+1;
         CheckS
