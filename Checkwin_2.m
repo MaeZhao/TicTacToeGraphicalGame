@@ -1,5 +1,5 @@
 % Check row for P1 win
-       
+winCount = P1win + P2win;     
 for i = 1:3
     if sum(DBoard(i,:)==P1const*ones (1,3))== 3
        
@@ -63,7 +63,9 @@ for i = 1:3
         P2win =P2win + 1
         fprintf ('%s wins',P2name)
     end
-    
-
+    if winCount < (P1win + P2win)
+        gameEnd = true
+        Ini
+    end
 end
     

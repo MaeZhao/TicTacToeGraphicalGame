@@ -1,17 +1,17 @@
 %% Checks whether characters have won, lost or at a tie
-clear
-clc
-load Variables 
-repeat = true;
-while(repeat == true)
-    P1name = input("Player one input your name:\n", "s");
-    P2name = input("Player two input your name:\n", "s");
-    DisplayG
-    
-    play = input("Want to play again?(Y for yes, any other key for no)\n", 's');
+if gameEnd == false
+    play = input("Want to play a game?(y for yes, any other key for no)\n", 's');
     if (play == "y")
-        repeat = true;
-    else
-        repeat = false;
-    end 
+        P1name = input("Player one input your name:\n", "s");
+        P2name = input("Player two input your name:\n", "s");
+        DisplayG
+        Ini
+    end
+end
+    
+if gameEnd == true
+    play = input("Want to play another game?(y for yes, any other key for no)\n", 's');
+    if (play == "y")
+        Ini
+    end
 end
