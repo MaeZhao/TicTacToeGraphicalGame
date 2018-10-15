@@ -22,5 +22,5 @@ while (stop==false)
         counter = counter + 1;
     end
     imshow([GBoard{1,:};GBoard{2,:};GBoard{3,:}]); %% MUST USE THIS TO UPDATE
-    CheckWin
+    Checkwin_2
 end
