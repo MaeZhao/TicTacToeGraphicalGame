@@ -1,6 +1,6 @@
 %% Checks whether characters have won, lost or at a tie
 if gameEnd == false;
-    play = input("Want to play a game?(y for yes, any other key for no)\n", 's');
+    play = char(inputdlg("Want to play a game? (y for yes, any other key for no)", 's'));
     if (play == "y")
         P1name = string(inputdlg({'Player 1 Name'}, 'Name', [1 40]));
         P2name = string(inputdlg({'Player 2 Name'}, 'Name', [1 40]));
@@ -12,9 +12,12 @@ if gameEnd == false;
 end
 play = "";
 if gameEnd == true
-    play = input("\nWant to play another game?(y for yes, any other key for no)\n", 's');
+    pause(3)
+    play =char(inputdlg("Want to play another game?(y for yes, any other key for no)", 's'));
     if (play == "y")
+        gameEnd = false
         Ini
+        
     else
         error(ms);
     end
