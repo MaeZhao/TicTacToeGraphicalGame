@@ -4,9 +4,10 @@ winCount = P1win + P2win;
 if counter >= 9
     message='Tie between ' + P1name+ ' & ' + P2name;
     msgbox ( message, 'Tie')
-    pause(1);
+    pause(7);
     message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won ' + P2win + ' points.';
     msgbox ( message, 'Points') 
+    pause (7)
     gameEnd = true;
     Ini
 end
