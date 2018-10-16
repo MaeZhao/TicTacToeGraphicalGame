@@ -6,4 +6,4 @@ Dr.Caldwell
   - Upload your _personal versions_ of code as a **NEW  BRANCH** (not as MASTER)
   - Code checked and agreed upon by every body in the _group_ is uploaded to **MASTER BRANCH**!
 ## THINGS LEFT TO DO:
-  - FIGURE WHY WE NEED TO PUT Y twice to continue
+  - GET RID OF UNECESSARY VARIABLES
