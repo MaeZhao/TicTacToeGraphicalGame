@@ -14,7 +14,7 @@ if gameEnd == false
 end
 
 if gameEnd == true
-    pause(1)
+    pause(2)
     play =char(inputdlg("Want to play another game?(y for yes, any other key for no)", 'Play Again?'));
     if (play == "y" || play == "Y")
         DBoard = newDBoard;
