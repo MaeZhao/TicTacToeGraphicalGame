@@ -4,11 +4,11 @@ winCount = P1win + P2win;
 if counter >= 9
     message='Tie between ' + P1name+ ' & ' + P2name;
     msgbox ( message, 'Tie')
-    pause(3);
+    pause(1);
     message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won ' + P2win + ' points.';
     msgbox ( message, 'Points') 
     gameEnd = true;
-    In
+    Ini
 end
 for i = 1:3
     if sum(DBoard(i,:)==P1const*ones (1,3))== 3
@@ -38,8 +38,7 @@ for i = 1:3
          message=P2name+' wins';
        msgbox ( message, 'Winner')
     end
-     
-
+  
 
 % Check columns for P2 win
 
@@ -82,7 +81,7 @@ for i = 1:3
 % Check win
     if winCount < (P1win + P2win)
         gameEnd = true;
-        pause(3);
+        pause(1);
         message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won ' + P2win + ' points.';
         msgbox ( message, 'Points') 
         Ini
