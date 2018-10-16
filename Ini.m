@@ -9,7 +9,9 @@ if gameEnd == false
         DisplayG
         Ini
     else 
-        error(ms);
+        msgbox({'Game Over', 'Thank You'})
+        pause (1)
+        msgbox({'Please Click'; 'Control + C'})
     end
 end
 
@@ -22,6 +24,8 @@ if gameEnd == true
         gameEnd = false
         DisplayG
     else
-        error(ms);
+        msgbox({'GAME OVER'; 'THANKS FOR PLAYING'});
+        pause (1)
+        msgbox({'Please Click'; 'Control + C'})
     end
 end
