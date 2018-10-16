@@ -12,7 +12,9 @@ if DBoard(row,col)==0
     
 else
     available = false;
-    disp('pick again')
+    msgbox('Pick Again', 'Sorry', 'error')
+    pause (1)
+    
         counter=1;
         end 
    
