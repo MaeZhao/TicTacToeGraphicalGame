@@ -2,7 +2,7 @@ clear
 clc
 warning('off','all')
 warning
-load Variables 
+load StartVariables 
 newDBoard = DBoard;
 newGBoard = GBoard;
 gameEnd = false;
