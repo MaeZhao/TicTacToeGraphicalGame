@@ -2,8 +2,8 @@
 if gameEnd == false;
     play = input("Want to play a game?(y for yes, any other key for no)\n", 's');
     if (play == "y")
-        P1name = string(inputdlg({'Name'}, 'Enter Player 1 Name', [1 40]));
-        P2name = string(inputdlg({'Name'}, 'Enter Player 2 Name', [1 40]));
+        P1name = string(inputdlg({'Player 1 Name'}, 'Name', [1 40]));
+        P2name = string(inputdlg({'Player 2 Name'}, 'Name', [1 40]));
         DisplayG
         Ini
     else 

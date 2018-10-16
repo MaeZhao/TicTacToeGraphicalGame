@@ -2,10 +2,10 @@
 winCount = P1win + P2win;     
 % Check tie
 if counter >= 9
-     message='tie between' + P1name+ ' & ' + P2name;
+     message='Tie between ' + P1name+ ' & ' + P2name
        msgbox ( message, 'Winner') 
     gameEnd = true;
-    Ini
+    In
 end
 for i = 1:3
     if sum(DBoard(i,:)==P1const*ones (1,3))== 3
