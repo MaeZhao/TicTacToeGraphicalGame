@@ -1,7 +1,7 @@
 % Check row for P1 win
 winCount = P1win + P2win;     
 % Check tie
-if counter >= 9
+if counter >= 9 %error since the counter doesn't recognize if there is a winner on the 9th move
     message='Tie between ' + P1name+ ' & ' + P2name;
     msgbox ( message, 'Tie')
     pause(2);
