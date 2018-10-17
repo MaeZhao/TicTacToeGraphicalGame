@@ -1,6 +1,6 @@
 %% Display and triggers CheckS and Checkwin
 if stop == false % if the game is stopped will not update
-    figure('WindowStyle', 'docked');
+    figure('WindowStyle', 'modal');
     imshow([GBoard{1,:};GBoard{2,:};GBoard{3,:}]);
     counter = 0; % counts the number of plays
 while (stop == false)
