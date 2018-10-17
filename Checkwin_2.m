@@ -1,6 +1,21 @@
 %% Checks Wins
 % Check row for P1 win
+<<<<<<< HEAD
 winCount = P1win + P2win;
+=======
+winCount = P1win + P2win;     
+% Check tie
+if counter >= 9 %error since the counter doesn't recognize if there is a winner on the 9th move
+    message='Tie between ' + P1name+ ' & ' + P2name;
+    msgbox ( message, 'Tie')
+    pause(2);
+    message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won ' + P2win + ' points.';
+    msgbox ( message, 'Points') 
+    pause (2)
+    gameEnd = true;
+    Ini
+end
+>>>>>>> 940b23662694b7876f3362f4eb0566f376f53dfc
 for i = 1:3
     if sum(DBoard(i,:)==P1const*ones (1,3))== 3 
         P1win = P1win+1;
@@ -74,6 +89,7 @@ if counter > 9 && stop == false % if the game is stopped will not continue
     Ini
 end
 % Check win
+<<<<<<< HEAD
 if winCount < (P1win + P2win)&& stop == false % if the game is stopped will not continue 
     gameEnd = true;
     pause(1);
@@ -81,6 +97,15 @@ if winCount < (P1win + P2win)&& stop == false % if the game is stopped will not 
                                 + P2win + ' points.';
     msgbox ( message, 'Points') 
     Ini
+=======
+    if winCount < (P1win + P2win)
+        gameEnd = true;
+        pause(2);
+        message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won ' + P2win + ' points.';
+        msgbox ( message, 'Points') 
+        Ini
+    end
+>>>>>>> 940b23662694b7876f3362f4eb0566f376f53dfc
 end
 
     
