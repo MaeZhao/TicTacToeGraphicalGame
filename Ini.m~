@@ -17,7 +17,6 @@ if gameEnd == false %runs bc Ini initailizes stop to false
 elseif gameEnd == true || stop == false
     pause(2)
     play =char(inputdlg("Want to play another game?(y for yes, any other key for no)", 'Play Again?'));
-    close all hidden
     if (play == "y" || play == "Y")
         DBoard = newDBoard;
         GBoard = newGBoard;

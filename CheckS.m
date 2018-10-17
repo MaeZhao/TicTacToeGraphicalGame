@@ -1,6 +1,6 @@
 if DBoard(row,col)==0
     available=true;
-    if mod(counter, 2) == 0 %change from counter == 1 to mod(counter, 2) == 0
+    if mod(counter, 2) == 0 
         available= true;
     end
     if mod(counter, 2) == 0
