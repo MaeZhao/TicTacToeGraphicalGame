@@ -61,9 +61,16 @@ for i = 1:3
         break
     end
 end
-
+% Check win
+if winCount < (P1win + P2win)&& stop == false % if the game is stopped will not continue 
+    gameEnd = true;
+    pause(2);
+    message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won '...
+                                + P2win + ' points.';
+    msgbox ({'Points:' ; message}) 
+    Ini
 % Check tie
-if counter >= 9 && stop == false % if the game is stopped will not continue
+elseif counter >= 9 && stop == false % if the game is stopped will not continue
     message='Tie between ' + P1name+ ' & ' + P2name;
     msgbox ( message, 'Tie')
     pause(2);
@@ -72,14 +79,5 @@ if counter >= 9 && stop == false % if the game is stopped will not continue
     msgbox ({'Points:' ; message}) 
     pause(2)
     gameEnd = true;
-    Ini
-end
-% Check win
-if winCount < (P1win + P2win)&& stop == false % if the game is stopped will not continue 
-    gameEnd = true;
-    pause(2);
-    message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won '...
-                                + P2win + ' points.';
-    msgbox ({'Points:' ; message}) 
     Ini
 end
