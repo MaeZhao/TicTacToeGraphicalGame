@@ -63,13 +63,14 @@ for i = 1:3
 end
 
 % Check tie
-if counter > 9 && stop == false % if the game is stopped will not continue
+if counter >= 9 && stop == false % if the game is stopped will not continue
     message='Tie between ' + P1name+ ' & ' + P2name;
     msgbox ( message, 'Tie')
-    pause(1);
+    pause(2);
     message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won '...
                                     + P2win + ' points.';
     msgbox ( message, 'Points') 
+    pause(2)
     gameEnd = true;
     Ini
 end
