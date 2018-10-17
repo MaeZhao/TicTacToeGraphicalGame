@@ -1,4 +1,3 @@
-%CheckS
 if DBoard(row,col)==0
     available=true;
     if mod(counter, 2) == 0 %change from counter == 1 to mod(counter, 2) == 0
@@ -9,37 +8,7 @@ if DBoard(row,col)==0
     else
         DBoard(row,col)=79;
     end
-    
 else
     available = false;
-<<<<<<< HEAD
     disp('pick again')
-<<<<<<< HEAD
 end 
-=======
-    msgbox('Pick Again', 'Sorry', 'error')
-    pause (1)
-    
-        counter=1;
-        end 
->>>>>>> 940b23662694b7876f3362f4eb0566f376f53dfc
-=======
-        counter=1;
-        end 
->>>>>>> parent of 6fa8f38... fixed
-   
-  
-   
-    
- 
-   
-   
-    
-        
-        
-       
-    
-    
-    
-        
-  
