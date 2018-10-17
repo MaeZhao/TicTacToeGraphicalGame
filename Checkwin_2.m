@@ -52,13 +52,11 @@ for i = 1:3
         P2win =P2win + 1;
         message=P2name+' wins';
         msgbox ( message, 'Winner')
-        i = 3;
-       
+        
     elseif DBoard(1,3) == 79 && DBoard (2,2)==79 && DBoard (3,1) ==79
         P2win =P2win + 1;
         message=P2name+' wins';
         msgbox ( message, 'Winner');
-        i = 3;
     end
 end
 
@@ -76,7 +74,7 @@ end
 % Check win
 if winCount < (P1win + P2win)&& stop == false % if the game is stopped will not continue 
     gameEnd = true;
-    pause(1);
+    pause(2);
     message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won '...
                                 + P2win + ' points.';
     msgbox ( message, 'Points') 
