@@ -69,7 +69,7 @@ if counter >= 9 && stop == false % if the game is stopped will not continue
     pause(2);
     message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won '...
                                     + P2win + ' points.';
-    msgbox ( message, 'Points') 
+    msgbox ({'Points:' ; message}) 
     pause(2)
     gameEnd = true;
     Ini
@@ -80,6 +80,6 @@ if winCount < (P1win + P2win)&& stop == false % if the game is stopped will not 
     pause(2);
     message=P1name+ ' won ' + P1win + ' points, ' + P2name + ' won '...
                                 + P2win + ' points.';
-    msgbox ( message, 'Points') 
+    msgbox ({'Points:' ; message}) 
     Ini
 end
