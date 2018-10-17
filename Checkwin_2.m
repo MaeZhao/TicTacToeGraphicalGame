@@ -6,7 +6,7 @@ for i = 1:3
         P1win = P1win+1;
         message=P1name+' wins';
         msgbox ( message, 'Winner')
-        i = 3; % same thing as a break
+        break
     
 % Check columns for P1 win
 
@@ -14,7 +14,7 @@ for i = 1:3
         P1win = P1win+1;
         message=P1name+' wins';
         msgbox ( message, 'Winner')
-        i = 3;
+        break
 
 % Check row for P2 win
 
@@ -22,7 +22,7 @@ for i = 1:3
         P2win =P2win + 1;
         message=P2name+' wins';
         msgbox ( message, 'Winner')
-        i = 3;
+        break
 
 % Check columns for P2 win
 
@@ -30,7 +30,7 @@ for i = 1:3
         P2win =P2win + 1;
         message=P2name+' wins';
         msgbox ( message, 'Winner')
-        i = 3;
+        break
 
 % Check diag for P1 win
 
@@ -38,13 +38,13 @@ for i = 1:3
         P1win =P1win + 1;
         message=P1name+' wins';
         msgbox ( message, 'Winner')
-        i = 3;
+        break
         
     elseif DBoard(1,3) == 88 && DBoard (2,2)==88 && DBoard (3,1) ==88
         P1win =P1win + 1;
         message=P1name+' wins';
         msgbox ( message, 'Winner')
-        i = 3;
+        break
     
  % Check diag for P2 win
 
@@ -52,11 +52,13 @@ for i = 1:3
         P2win =P2win + 1;
         message=P2name+' wins';
         msgbox ( message, 'Winner')
+        break
         
     elseif DBoard(1,3) == 79 && DBoard (2,2)==79 && DBoard (3,1) ==79
         P2win =P2win + 1;
         message=P2name+' wins';
         msgbox ( message, 'Winner');
+        break
     end
 end
 
