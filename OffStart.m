@@ -1,8 +1,9 @@
+%% STARTS Game 
 clear
 clc
 warning('off','all')
 warning
-load StartVariables 
+load Variables 
 newDBoard = DBoard;
 newGBoard = GBoard;
 gameEnd = false;
