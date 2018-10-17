@@ -1,4 +1,4 @@
-%CheckS
+%% CheckS Checks whether or not a space is availible
 if DBoard(row,col)==0
     available=true;
     if mod(counter, 2) == 0 %change from counter == 1 to mod(counter, 2) == 0
@@ -9,12 +9,10 @@ if DBoard(row,col)==0
     else
         DBoard(row,col)=79;
     end
-    
 else
     available = false;
     disp('pick again')
-        counter=1;
-        end 
+end 
    
   
    
