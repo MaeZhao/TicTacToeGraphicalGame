@@ -21,7 +21,7 @@ elseif gameEnd == true || stop == false
     if (play == "y" || play == "Y")
         DBoard = newDBoard;
         GBoard = newGBoard;
-        gameEnd = false 
+        gameEnd = false;
         DisplayG
 % Game-Over
     else
