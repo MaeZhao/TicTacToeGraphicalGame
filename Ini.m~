@@ -6,7 +6,7 @@ if gameEnd == false %runs bc Ini initailizes stop to false
         DBoard = newDBoard; %set the Boards to the cleared version to start each game
         GBoard = newGBoard;
         P1name = string(inputdlg({'Player 1 Name'}, 'Name', [1 40])); %create a variable string for the player names
-        P2name = string(inputdlg({'Player 2 Name'}, 'Name', [1 40]));%create a variable string for the player names
+        P2name = string(inputdlg({'Player 2 Name'}, 'Name', [1 40]));
         DisplayG
 % Game-Over
     else %if input is anything but "Y" or "y" the game is over

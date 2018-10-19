@@ -1,4 +1,4 @@
-%% Checks Wins
+%% Purpose: Checks who wins
 
 winCount = P1win + P2win;
 for i = 1:3
