@@ -1,12 +1,12 @@
 clear
 clc
 
-values = input ('Please enter the values you want to sort (seperate each value with a space) \n');
+values = input ('Please enter the values you want to sort (seperate each value with a space and enclose in all square bracets [ ] ) \n ex. [ 5 3 6 7 2 1] \n Your values:');
 len = length(values);
 
 endsort=false;
 
-while endsort==false      
+while endsort==false %if endsort is true code will end
     for i=2:len
               if values(i) < values(i-1) % compare two values and switch if left one is smaller
             
@@ -18,16 +18,16 @@ while endsort==false
                   SNum=TempNum;
                   values(i) = SNum;
                   values (i-1) = FNum;
-                  endsort=true;
+                  endsort=true; %after the switch end is true
               end
     end
     for i=2:len
-        if values(i)<values(i-1)
+        if values(i)<values(i-1) %change end from true to false if there is a value to be switched
             endsort =  false;
         end
     end
 end
 
-display = [ 'Your sorted values are: \n', num2str(values)];
+display = [ 'Your sorted values are: ', num2str(values)];
 
 disp(display)

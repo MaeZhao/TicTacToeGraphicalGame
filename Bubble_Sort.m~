@@ -6,30 +6,28 @@ len = length(values);
 
 endsort=false;
 
-while endsort==false      
+while endsort==false %if 
     for i=2:len
-              if values(i) < values(i-1) % if values o
+              if values(i) < values(i-1) % compare two values and switch if left one is smaller
             
-                  FNum = values (i-1)
-                  SNum = values (i)
+                  FNum = values (i-1);
+                  SNum = values (i);
         
-                  TempNum=FNum
-                  FNum=SNum
-                  SNum=TempNum
-                  values(i) = SNum
-                  values (i-1) = FNum
-                  endsort=true
+                  TempNum=FNum;
+                  FNum=SNum;
+                  SNum=TempNum;
+                  values(i) = SNum;
+                  values (i-1) = FNum;
+                  endsort=true; %after the switch end is true
               end
     end
     for i=2:len
-        if values(i)<values(i-1)
-            endsort= false
+        if values(i)<values(i-1) %change end from true to false if there is a value to be switched
+            endsort =  false;
         end
     end
 end
 
-               
-   
-      
+display = [ 'Your sorted values are: \n', num2str(values)];
 
-values
+disp(display)
