@@ -1,4 +1,4 @@
-%% STARTS Game 
+%% Pupose: STARTS Game 
 clear
 clc
 warning('off','all')
