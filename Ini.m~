@@ -1,4 +1,5 @@
 %% Purpose: Checks whether characters have won, lost or at a tie
+
 while(stop == false) 
 if gameEnd == false %runs bc Ini initailizes stop to false
     play = char(inputdlg("Want to play a game of TicTacToe? (y for yes, any other key for no)", 'New Game'));

@@ -14,14 +14,14 @@ if gameEnd == false %runs bc Ini initailizes stop to false
         close all hidden
         stop = true; % prevents DisplayG loop from running
     end 
-elseif gameEnd == true || stop == false %
+elseif gameEnd == true || stop == false 
     pause(2)  %The message boxes stays up for 2 seconds
     play =char(inputdlg("Want to play another game?(y for yes, any other key for no)", 'Play Again?'));
     close all hidden
     if (play == "y" || play == "Y")
         DBoard = newDBoard; %save a cleared new board to call when a digital board is call
         GBoard = newGBoard; %save a cleared new board to call when a graphical board played 
-        gameEnd = false; 
+        gameEnd = false; %When no game has been won
         DisplayG
 % Game-Over
     else
